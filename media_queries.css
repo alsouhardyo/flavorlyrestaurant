@@ -18,6 +18,9 @@
 }
 
 @media screen and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
   .menu_container {
     flex-wrap: wrap;
   }
@@ -220,6 +223,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .menu_items {
     width: 80%;
     margin: 20px auto;
@@ -433,6 +439,9 @@
 }
 
 @media screen and (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
   .menu_image {
     width: 95%;
     height: auto;
@@ -605,6 +614,10 @@
 }
 
 @media screen and (max-width: 663px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .text_img_container {
     flex-direction: column;
   }
