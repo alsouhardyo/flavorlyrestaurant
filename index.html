@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flavorly</title>
-  <link rel="shortcut icon" href="fav_icon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="fav_icon.jpg" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -15,12 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="
-    https://cdn.jsdelivr.net/npm/iconsax-font-icon@1.1.0/fantasticonrc.min.js
-    "></script>
-  <link href="
-    https://cdn.jsdelivr.net/npm/iconsax-font-icon@1.1.0/dist/icons.min.css
-    " rel="stylesheet" />
+  <link rel="stylesheet" href="media_queries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -29,16 +27,21 @@
     <div class="header_nav_container">
       <img src="restaurant_logo-removebg-preview.png" alt="image of the website logo" />
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about_us">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><button><a href="#contact" class="contact">Contact</a></button></li>
+        <ul class="nav-bar">
+          <input type="checkbox" id="check">
+          <span class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_us">About US</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <label for="check" class="close-menu"><i class="fa-solid fa-circle-xmark"></i></label>
+          </span>  
+          <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>     
         </ul>
       </nav>
+        
     </div>
     <div class="text_img_container">
       <div class="home_text">
@@ -55,11 +58,14 @@
         <img src="spices.png" />
       </div>
     </div>
+    <div class="sticky_part">
+      <p><a href="tel:+92-184164610">Order Now: <span>+92-184164610</span></p></a>
+    </div>
   </section>
   <section class="menu" id="menu">
     <h1>Our Popular Dishes</h1>
     <div class="menu_container">
-      <div class="menu_items">
+      <div class="menu_items special_items1">
         <img
           src="https://images.unsplash.com/photo-1576402187878-974f70c890a5?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="image of menu" class="menu_image" />
@@ -71,7 +77,7 @@
         </p>
         <a href="#" class="menu_link">Order Now</a>
       </div>
-      <div class="menu_items">
+      <div class="menu_items special_items2">
         <img
           src="https://images.unsplash.com/photo-1630851840633-f96999247032?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="image of menu" class="menu_image" />
@@ -83,7 +89,7 @@
         </p>
         <a href="#" class="menu_link">Order Now</a>
       </div>
-      <div class="menu_items">
+      <div class="menu_items special_items3">
         <img
           src="https://images.unsplash.com/photo-1533622597524-a1215e26c0a2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="image of menu" class="menu_image" />
@@ -103,10 +109,9 @@
     <div class="about_box">
       <p>Our Kitchen</p>
       <p>
-        We cook with hygiene and tradiition using handcrafted spices and
-        quality groceries. Our success lies on authentic Chettinad recipes and
-        traditional cooking methods.Offering over 29 cherished dishes passed
-        down through generations
+        We cook with passion, using time-honored recipes and hand-selected ingredients. Our success stems from authentic
+        Chettinad flavors and traditional cooking methods. Experience over 29 generations-old dishes passed down with
+        love.
       </p>
       <a href="#contact" class="about_contact">Contact Us</a>
     </div>
@@ -272,7 +277,7 @@
   <section class="footer" id="features">
     <div class="footer_container" id="contact">
       <div class="footer_item item1">
-          <img src="restaurant_logo-removebg-preview.png" alt="logo image">
+        <img src="restaurant_logo-removebg-preview.png" alt="logo image" />
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -314,7 +319,6 @@
   </section>
   <div class="end_part">
     <p>Copyright &copy; 2024 All Rights Reserved</p>
-    <p>Order Now: <span>+92-184164610</span></p>
   </div>
 </body>
 
