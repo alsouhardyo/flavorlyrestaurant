@@ -37,12 +37,6 @@ body{
   z-index: 20;
   position: relative;
 }
-/* .header_nav_container header{
-  display: flex;
-  align-items: center;
-  position: relative;
-  right: 30px;
-} */
 .header_nav_container img{
   width: 120px;
   height: auto;
@@ -55,24 +49,43 @@ body{
   font-style: normal;
   font-size: 2rem;
 }
-nav ul{
+nav ul span{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
-nav ul li{
+.open-menu , .close-menu{
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu{
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu{
+  top: 20px;
+  right: 20px;
+}
+#check{
+  display: none;
+}
+nav ul span li{
   list-style-type: none;
 }
-nav ul li a{
+nav ul span li a{
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.05rem;
 }
-nav ul li a:hover{
+nav ul span li a:hover{
   color: #a9686c;
 }
-nav ul li button{
+nav ul span li button{
   text-align: center;
   background-color: var(--primary-color);
   color: white;
@@ -84,13 +97,13 @@ nav ul li button{
   transition: all 0.5s ease-in-out;
   box-shadow: 0 2px 10px #858585;
 }
-nav ul li button:hover{
+nav ul span li button:hover{
   padding: 15px 28px;
   font-size: 1.1rem;
   cursor: pointer;
-  box-shadow: 0 2px 10px #858585, 0 5px 15px #858585, 0 10px 20px #858585;
+  box-shadow: 0px 2px 5px #858585, 0px 5px 10px #858585, 0px 10px 20px #858585;
 }
-nav ul li button a:hover{
+nav ul span li button a:hover{
   color: #fff;
 }
 .text_img_container{
@@ -99,12 +112,32 @@ nav ul li button a:hover{
   align-items: center;
   padding: 20px 80px;
 }
+.sticky_part p{
+  position: fixed;
+  right: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 30px;
+  display: inline-block;
+  z-index: 800;
+  box-shadow: 0px 0px 25px #fd6666;
+}
+.sticky_part p a{
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+
+}
+.sticky_part p span{
+  color: var(--primary-color);
+  font-weight: 700;
+  z-index: 200;
+}
 .home_image img{
   width: 450px;
   height: auto;
   border-radius: 50%;
   position: relative;
-  z-index: 20;
   right: 20px;
 }
 .home_text_same{
@@ -503,18 +536,6 @@ tr, td{
 .end_part p:first-child{
   text-align: center;
   color: #fff;
-}
-.end_part p:last-child{
-  position: absolute; 
-  right: 20px;
-  background-color: white;
-  color: black;
-  padding: 0 15px 15px 15px;
-  border-radius:0 0px 30px 30px;
-}
-.end_part p:last-child span{
-  color: var(--primary-color);
-  font-weight: 700;
 }
 .item1{
   margin-top: 25px;
