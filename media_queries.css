@@ -148,7 +148,7 @@
   .header_nav_container {
     overflow: initial;
   }
-  nav .nav-bar{
+  nav{
     z-index: 500;
   }
 
